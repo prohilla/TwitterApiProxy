@@ -35,14 +35,14 @@ public class TwitterOauth {
 		try {
 			OAuthService oservice = new ServiceBuilder()
 					.provider(TwitterApi.class)
-					.apiKey("t9PlQtAIGQrJC2HGAozoiobwh")
+					.apiKey("APIKEY")
 					.apiSecret(
-							"lvo9xu58Pv5Evntmv5QNO4SVt1kugNGlMvBvpgLhsWL3Zy596U")
+							"APISECRET")
 					.build();
 
 			Token token = new Token(
-					"2916652344-XScJAIqHF8E785vYHTazui6zECYJ76I8PMgIr28",
-					"jETmnuRoCHJKysaEed70k75daWNxw3mllo2vfN4xuEoIE");
+					"ACCESSTOKEN",
+					"ACCESSTOKENSECRET");
 			if (action.equals("get")) {
 				request = new OAuthRequest(Verb.GET, resourceUrl);
 			}
