@@ -57,12 +57,15 @@ http://localhost:8080/twitter-search/trend?parameter=value&parameter=value
 ```
 http://localhost:8080/twitter-search/trends?id=23424977&exclude=hashtags
 ```
-### Proxy analytics
+### Analytics
+The request and error data is being recorded in the database and analytics can be done in many ways, for demonsatration I have provided the following analytics for proxy
+
+#### Proxy analytics
 Returns the number of times the search proxy (general) and trends proxy has been accesed.
 ```
 http://localhost:8080/twitter-proxy/apianalytics
 ```
-### User analytics
+#### User analytics
 Returns the proxy api name and number of times this user has accessed it.
 ```
 http://localhost:8080/twitter-proxy/useranalytics?user=value
