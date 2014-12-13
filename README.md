@@ -1,5 +1,5 @@
 # Twitter API Proxy
-API management gateway for Twitter search API. The gateway provided simple user authentication with username and password, user activity is tracked once they log in. All the request sent by user, errors from twitter API and errors from Proxy are written in a database, you can query this database and analyse the gateway usage.
+API management gateway for Twitter search and trends API. The gateway provides simple user authentication with username and password, user activity is tracked once they log in. All the request sent by user, errors from twitter API and errors from Proxy are written in a database, you can query this database and analyse the gateway usage.
 
 ### What all can be done ?
 * Client can perform Twitter search with all parameters supported as with the official Twitter search API.
@@ -26,7 +26,7 @@ The file name **twitterdb** in db folder is the SQLite database file to and from
 - <b>searches</b> - saves all searches done by users
 - <b>users</b> - consist user information
 
-### Twitter API documentation
+### PLease refer Twitter API documentation to understand parameters and associated values
 1. Twitter search API documentation
 >https://dev.twitter.com/rest/reference/get/search/tweets
 2. Twitter get trends by place
