@@ -26,7 +26,7 @@ The file name **twitterdb** in db folder is the SQLite database file to and from
 - <b>searches</b> - saves all searches done by users
 - <b>users</b> - consist user information
 
-### PLease refer Twitter API documentation to understand parameters and associated values
+### Pease refer Twitter API documentation to understand parameters and associated values
 1. Twitter search API documentation
 >https://dev.twitter.com/rest/reference/get/search/tweets
 2. Twitter get trends by place
