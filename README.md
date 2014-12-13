@@ -9,7 +9,7 @@ API management gateway for Twitter search API. The gateway provided simple user 
 
 ### Running the proxy
 
-Pull the source code and run file ClientOperations.java, the application by default listens on port 8080 and uses local sqlite database file to write searches and errors. Port can be changed in main method of ClientOperations.java and db configuration in dbfile.properties.
+Pull the source code and run file ClientOperations.java, the application by default listens on port 8080 and uses local sqlite database file to write searches and errors. Port can be changed in main method of ClientOperations.java and db configuration in dbfile.properties. **Also you will need to configure your own twitter API Key, API secret, Access Token and Access Token secret in the TwitterOauth.java file.**
 
 ### Tools used
 - Eclipse
@@ -40,46 +40,56 @@ http://localhost:8080/twitter-search/<whatever>?username=value&password=value&pa
 ```
 Proxy authentication  is optional and by default turned off by method unAuthenticatedUsers() in ClientOperations.java file. You can force user authentication by changing return value true to false in this method. User activity can only be tracked once they log in ie. use above method of sending request.
 
-### Proxy search url
+### Proxy search request
 ```
 http://localhost:8080/twitter-search/general?parameter=value&parameter=value 
 ```
-##### Sample search url
+##### Sample search request
 
 ```
 http://localhost:8080/twitter-search/general?q=california&result_type=recent&count=10&until=2014-12-06
 ```
-### Proxy get trends
+### Proxy get trends request
 ```
 http://localhost:8080/twitter-search/trend?parameter=value&parameter=value 
 ```
-##### Sample get trends url
+##### Sample get trends request
 ```
 http://localhost:8080/twitter-search/trends?id=23424977&exclude=hashtags
 ```
 ### Analytics
 The request and error data is being recorded in the database and analytics can be done in many ways, for demonsatration I have provided the following analytics for proxy
 
-#### Proxy analytics
+##### Proxy analytics
 Returns the number of times the search proxy (general) and trends proxy has been accesed.
 ```
 http://localhost:8080/twitter-proxy/apianalytics
 ```
-#### User analytics
+##### User analytics
 Returns the proxy api name and number of times this user has accessed it.
 ```
 http://localhost:8080/twitter-proxy/useranalytics?user=value
 ```
 ### Proxy utilities
 
-<b>Add new user to proxy</b>
+#####Add new user to proxy
 ```
 http://localhost:8080/twitter-proxy/addnewuser?newusername=value&newuserpassword=value
 ```
-<b>Ban or Unban IP address</b>
+#####Ban or Unban IP address
 ```
 http://localhost:8080/twitter-proxy/iputil?ip=value&action=ban
 ```
 ```
 http://localhost:8080/twitter-proxy/iputil?ip=value&action=unban
 ```
+### Twitter status update (AddOn and TODO)
+I added this funtionaliy to check and demonstarte POST capabilities of the application. More work regarding this is in my todo list. For now tweet will be post to the twitter handle of user who has created the twitter application for api and access token.
+
+##### Sample status update request
+```
+http://localhost:8080/twitter-proxy/posttweet?status="value"&parameter=value
+```
+### Output
+
+### Errors and Proxy Errors
