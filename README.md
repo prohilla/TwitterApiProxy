@@ -17,18 +17,21 @@ Pull the source code and run the file ClientOperations.java, the application by 
 5. searches - saves all searches done by user
 6. users - consist user information
 
-<h2>Types of searched</h2>
-<b>general</b> - http://localhost:8080/twitter-search/general?parameter=value&parameter=value ...
+<h2>Twitter API documentation</h2>
+1. Twitter search API documentation https://dev.twitter.com/rest/reference/get/search/tweets</br>
+2. Twitter status update API documentation https://dev.twitter.com/rest/reference/post/statuses/update        
+The Proxy supports all parameters mentioned in official documentation of respective API
+<h2>Types of search</h2>
+<b>general</b> - http://localhost:8080/twitter-search/general?parameter=value&parameter=value
 <br>
-<b>trends</b> - http://localhost:8080/twitter-search/trends?parameter=value&parameter=value ...
-
+<b>trends</b> - http://localhost:8080/twitter-search/trends?parameter=value&parameter=value
 <h2>Posting tweet</h2>
-<b>post tweet</b> - http://localhost:8080/twitter-proxy/posttweet?parameter=value&parameter=value ...
+<b>post tweet</b> - http://localhost:8080/twitter-proxy/posttweet?parameter=value&parameter=value
 <h2>Proxy analytics</h2>
-<b>API analytics</b> - http://localhost:8080/twitter-proxy/apianalytics?parameter=value&parameter=value ...
+<b>API analytics</b> - http://localhost:8080/twitter-proxy/apianalytics?parameter=value&parameter=value
 <br>
-<b>user analytics</b> - http://localhost:8080/twitter-proxy/useranalytics?parameter=value&parameter=value ...
+<b>user analytics</b> - http://localhost:8080/twitter-proxy/useranalytics?parameter=value&parameter=value
 <h2>Proxy utilities</h2>
-<b>Add user</b> - http://localhost:8080/twitter-proxy/addnewuser?parameter=value&parameter=value ...
+<b>Add user</b> - http://localhost:8080/twitter-proxy/addnewuser?parameter=value&parameter=value
 <br>
-<b>IP utilities</b> - http://localhost:8080/twitter-proxy/iputil?parameter=value&parameter=value ...
+<b>IP utilities</b> - http://localhost:8080/twitter-proxy/iputil?parameter=value&parameter=value
