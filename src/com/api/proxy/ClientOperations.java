@@ -116,6 +116,7 @@ class ClientOperations implements Runnable {
 	private static final String PROXY_ADD_NEW_USER_ERROR = "PROXY_ADD_NEW_USER_ERROR";
 	private static final String ACCESS_LIMIT_REACHED = "ACCESS_LIMIT_REACHED";
 	private static final String NO_DATA_T0_SHOW = "NO_DATA_TO_SHOW_YET";
+	private static final String STATUS_UPDATE_FAILED="STATUS_UPDATE_FAILED";
 	private static final String OK = "OK";
 	
 	//Initializing logger
@@ -378,7 +379,7 @@ class ClientOperations implements Runnable {
 		} catch (Exception e) {
 			
 			logger.log(Level.WARNING, "ERROR while posting new tweet", e);
-			errorResponse(PROXY_SEARCH_ERROR, "Posting to twitter failed.", out);
+			errorResponse(STATUS_UPDATE_FAILED, "Posting to twitter failed.", out);
 			return;
 		}
 
