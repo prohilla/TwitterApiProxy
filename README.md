@@ -17,11 +17,12 @@ Pull the source code and run the file ClientOperations.java, the application by 
 5. searches - saves all searches done by user
 6. users - consist user information
 
-<h2>Twitter API documentation</h2>
+<H2>Twitter API documentation</H2>
 1. Twitter search API documentation https://dev.twitter.com/rest/reference/get/search/tweets</br>
 2. Twitter status update API documentation https://dev.twitter.com/rest/reference/post/statuses/update        
 The Proxy supports all parameters mentioned in official documentation of respective API
-<h2>Types of search</h2>
+
+<H2>Types of search</H2>
 <b>general</b> - http://localhost:8080/twitter-search/general?parameter=value&parameter=value
 <br>
 <b>trends</b> - http://localhost:8080/twitter-search/trends?parameter=value&parameter=value
