@@ -36,8 +36,7 @@ public class TwitterOauth {
 			OAuthService oservice = new ServiceBuilder()
 					.provider(TwitterApi.class)
 					.apiKey("APIKEY")
-					.apiSecret(
-							"APISECRET")
+					.apiSecret("APISECRET")
 					.build();
 
 			Token token = new Token(
