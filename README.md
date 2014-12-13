@@ -83,13 +83,27 @@ http://localhost:8080/twitter-proxy/iputil?ip=value&action=ban
 ```
 http://localhost:8080/twitter-proxy/iputil?ip=value&action=unban
 ```
+### Output and Twitter API Errors
+
+- All outputs are formatted in JSON. Both HEADERS and BODY from response sent by Twitter API are forwarded to the client.
+- If Twitter API responds with an error, its recorded in the database (table name - errors)and forwarded to the client.
+
+### Proxy errors
+If the Proxy responds with an error, its recorded in the database (table name - proxyerrors) and sent to the client. List of proxy errors are as follows.
+
+- PROXY_INVALID_URL
+- PROXY_AUTHENTICATION_FAILED
+- PROXY_SEARCH_ERROR
+- PROXY_ANALYTICS_ERROR
+- PROXY_ADD_NEW_USER_ERROR
+- ACCESS_LIMIT_REACHED
+- NO_DATA_T0_SHOW
+- IP_BANNED
+
 ### Twitter status update (AddOn and TODO)
-I added this funtionaliy to check and demonstarte POST capabilities of the application. More work regarding this is in my todo list. For now tweet will be post to the twitter handle of user who has created the twitter application for api and access token.
+I added this funtionaliy to check and demonstarte POST capabilities of the application. More work regarding this is in my todo list. For now tweet will be posted to the twitter handle of user who has created the twitter application for api and access token.
 
 ##### Sample status update request
 ```
 http://localhost:8080/twitter-proxy/posttweet?status="value"&parameter=value
 ```
-### Output
-
-### Errors and Proxy Errors
