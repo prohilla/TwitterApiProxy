@@ -24,7 +24,7 @@ The file name **twitterdb** in db folder is the SQLite database file to and from
 - <b>ipbanlist</b> - list of IP addresses banned from accessing the proxy
 - <b>proxyerrors</b> - saved all errors sent by proxy
 - <b>searches</b> - saves all searches done by users (classified by "searchtype" general and trends)
-- <b>users</b> - consist user information
+- <b>users</b> - consist user information (passwords are curretly stored in plain text -note: always use techniques like hashing and salt to store passwords.)
 
 ### Pease refer Twitter API documentation to understand parameters and associated values
 1. Twitter search API documentation
