@@ -1,10 +1,13 @@
 # Twitter API Proxy
-API management gateway for Twitter search and trends API. The gateway provides simple user authentication with username and password, user activity is tracked once they log in. All the request sent by user, errors from twitter API and errors from Proxy are written in a database, you can query this database and analyse the gateway usage.
+API management gateway for Twitter search and trends API. The gateway provides simple user authentication with username and password, user activity is tracked once they log in. **All the request sent by user, errors from twitter API and errors from Proxy are written in a database, you can query this database and analyse the gateway usage.** Oauth is ued to connect to twitter.
 
 ### What all can be done ?
 * Client can perform Twitter search with all parameters supported as with the official Twitter search API.
 * Client can get Twitter trends with all parameters supported as with the official Twitter trends API.
-* User can authenticate himself with proxy using username and password. New users can be added to proxy. Ratelimits can be imposed and IP addresses can be banned & unbanned.
+* User can authenticate himself with proxy using username and password.
+* New users can be added to proxy.
+* Ratelimits can be imposed
+* IP addresses can be banned & unbanned.
 * Analytics can be obtained for proxy and user.
 
 ### Running the proxy
