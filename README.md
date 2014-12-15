@@ -110,3 +110,11 @@ I added this funtionaliy to check and demonstarte POST capabilities of the appli
 ```
 http://localhost:8080/twitter-proxy/posttweet?status="value"&parameter=value
 ```
+### Things I learned
+- Threading in Java
+- Sockets in Java
+- And obiviously managing projects with college finals :P 
+
+### Motivation
+- Love for programming
+- Internship coding challenge at MuleSoft https://www.youtube.com/watch?v=OxCXHPk3kYc
