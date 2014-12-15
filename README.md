@@ -117,4 +117,4 @@ http://localhost:8080/twitter-proxy/posttweet?status="value"&parameter=value
 
 ### Motivation
 - Love for programming
-- Internship coding challenge at MuleSoft https://www.youtube.com/watch?v=OxCXHPk3kYc
+- Internship coding challenge for MuleSoft https://www.youtube.com/watch?v=OxCXHPk3kYc
